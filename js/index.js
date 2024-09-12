@@ -7,12 +7,12 @@ function Imc(){
     const resultadoImc=document.getElementById("resultado");
     
     if(suma<18.5){
-        resultadoImc.textContent=nombre+" "+apellido+" "+"su IMC es  "+suma +" que es Bajo peso";
+        resultadoImc.textContent=nombre + " " + apellido + ", su IMC es " + suma.toFixed(2) + " que es Bajo peso";
     }else if(suma>18.5 && suma <24.9){
-        resultadoImc.textContent=nombre+" "+apellido+" "+"su IMC es  "+suma+" que es Peso saludable";
-    }else if (suma>25.0 &&suma <29.9 ){
-        resultadoImc.textContent=nombre+" "+apellido+" "+"su IMC es  "+suma+" que es SobrePeso";
+        resultadoImc.textContent=nombre + " " + apellido + ", su IMC es " + suma.toFixed(2) + " que es Peso saludable";
+    }else if (suma>25.0 &&suma <29.9){
+        resultadoImc.textContent=nombre + " " +apellido + ", su IMC es " + suma.toFixed(2) + " que es SobrePeso";
     }else if (suma >30.0){
-        resultadoImc.textContent=nombre+" "+apellido+" "+"su IMC es  "+suma+" que es Obesidad";
+        resultadoImc.textContent=nombre + " " + apellido + ", su IMC es " + suma.toFixed(2) + " que es Obesidad";
     }
 }
